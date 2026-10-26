@@ -1,0 +1,81 @@
+/* Mengatur tampilan seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    color: #1e3a8a;
+}
+
+/* Kartu utama */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.12);
+    border: 1px solid #bfdbfe;
+}
+
+/* Judul halaman */
+h1 {
+    color: #1d4ed8;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Paragraf */
+p {
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Tombol */
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efek ketika mouse diarahkan ke tombol */
+button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+/* Efek ketika tombol ditekan */
+button:active {
+    transform: scale(0.97);
+}
+
+/* Tampilan pada layar kecil */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 15px;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
+
+.sembunyi {
+    display: none;
+}
